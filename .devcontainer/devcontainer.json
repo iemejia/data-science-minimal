@@ -1,20 +1,11 @@
 {
   "name": "data-science-minimal",
   "image": "mcr.microsoft.com/devcontainers/universal:2-linux",
-  "hostRequirements": {
-    "memory": "32gb"
-  },
   "forwardPorts": [
     6006,
     8888
   ],
   "customizations": {
-    "codespaces": {
-      "openFiles": [
-        "README.md",
-        "Titanic.ipynb"
-      ]
-    },
     "vscode": {
       "settings": {
         "python.defaultInterpreterPath": "/opt/conda/envs/data_science_minimal",
@@ -27,6 +18,6 @@
     }
   },
   "onCreateCommand": "conda env create -f environment.yml",
-  "updateContentCommand": "conda init",
-  "postStartCommand": "/opt/conda/envs/data_science_minimal/bin/jupyter lab --notebook-dir=/workspaces/data-science-minimal --ip='0.0.0.0' --port=8888 --no-browser"
+  // "updateContentCommand": "conda init",
+  // "postStartCommand": "/opt/conda/envs/data_science_minimal/bin/jupyter lab --notebook-dir=/workspaces/data-science-minimal --ip='0.0.0.0' --port=8888 --no-browser"
 }
