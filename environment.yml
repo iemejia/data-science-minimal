@@ -1,0 +1,9 @@
+name: data_science_minimal
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - statsmodels==0.14.0
+  # - tensorflow==2.12.1
+  # auto register conda environments as ipython kernels in jupyter
+  - nb_conda_kernels==2.3.1
