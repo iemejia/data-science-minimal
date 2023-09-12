@@ -12,6 +12,9 @@
       ]
     }
   },
+  "remoteEnv": {
+    "ENABLE_ORYX_BUILD": "false"
+  },
   "onCreateCommand": "conda env create -f environment.yml",
   "updateContentCommand": "python -m ipykernel install --user --name data-science-minimal --display-name 'Python 3 (data-science-minimal)'"
   // "updateContentCommand": "conda init",
