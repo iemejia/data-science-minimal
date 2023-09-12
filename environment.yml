@@ -3,8 +3,12 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - statsmodels==0.14.0
-  # - tensorflow==2.12.1
+  # ipykernel is needed to register the pip environment with jupyter
   - ipykernel==6.25.0
   # auto register conda environments as ipython kernels in jupyter
   - nb_conda_kernels==2.3.1
+  # notebook is required to export to pdf/html
+  - notebook==7.0.3
+  - statsmodels==0.14.0
+  # - tensorflow==2.12.1
+
