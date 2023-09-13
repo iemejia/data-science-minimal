@@ -1,6 +1,6 @@
 {
   "name": "data-science-minimal",
-  "image": "mcr.microsoft.com/devcontainers/universal:2-linux",
+  "image": "mcr.microsoft.com/devcontainers/miniconda:0-3",
   "customizations": {
     "vscode": {
       "settings": {
@@ -8,6 +8,7 @@
       },
       "extensions": [
         "ms-python.python",
+        "ms-toolsai.datawrangler",
         "ms-toolsai.jupyter"
       ]
     }
@@ -16,7 +17,8 @@
     "ENABLE_ORYX_BUILD": "false"
   },
   "onCreateCommand": "conda env create -f environment.yml",
-  "updateContentCommand": "python -m ipykernel install --user --name data-science-minimal --display-name 'Python 3 (data-science-minimal)'"
+  "updateContentCommand": "python -m ipykernel install --user --name data-science-minimal --display-name 'Python 3 (data-science-minimal)'",
+  "remoteUser": "vscode"
   // "updateContentCommand": "conda init",
   // "postStartCommand": "/opt/conda/envs/data_science_minimal/bin/jupyter lab --notebook-dir=/workspaces/data-science-minimal --ip='0.0.0.0' --port=8888 --no-browser"
 }
